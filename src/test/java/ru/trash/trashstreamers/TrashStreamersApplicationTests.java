@@ -11,9 +11,9 @@ import ru.trash.trashstreamers.repo.VideoRepository;
 import ru.trash.trashstreamers.util.VideoUtil;
 
 import java.io.File;
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
 @SpringBootTest
 class TrashStreamersApplicationTests {

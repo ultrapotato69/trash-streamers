@@ -38,16 +38,4 @@ public class VideoController {
         videoRepository.save(video);
         return video;
     }
-
-    @PostMapping("/request_part")
-    public Video addNewVideo2(@RequestBody() Long[] ids){
-        Video video = new Video();
-        //video.setYoutubeId(VideoUtil.getYouTubeId(youtube_url));
-        List<Streamer> streamers = streamerRepository.findByIdIn(List.of(ids));
-        video.setStreamers(streamers);
-        videoRepository.save(video);
-        return video;
-    }
-
-
 }
